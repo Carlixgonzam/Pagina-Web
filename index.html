@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina en Desarrollo por Carla</title>
+    <meta name="description" content="Portafolio de Carla González, estudiante de Ingeniería de Sistemas y Computación, mostrando proyectos, habilidades e investigaciones.">
+    <title>Portafolio de Carla González</title>
     <link rel="stylesheet" href="style.css">
+    <script src="otro.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
             <p class="logo">CarlaG.</p>
             <nav>
-                <a href="#soy-Carla">Quien Soy</a>
-                <a href="#mis-proyectos">Mis Proyectos</a>
-                <a href="#logros">Logros</a>
+                <a href="#soy-Carla" class="nav-link">Quién Soy</a>
+                <a href="#mis-proyectos" class="nav-link">Mis Proyectos</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#investigaciones" class="nav-link">Investigaciones</a>
+                <a href="#vlog-personal" class="nav-link">Vlog Personal</a>
+                <a href="#deportes" class="nav-link">Deportes</a>
+                <a href="#final" class="nav-link">Contáctame</a>
             </nav>
         </div>
     </header>
     <main>
-        <section id="hero">
-            <h1>Carla González <br> Pagina Oficial</h1>
-            <button>Ingresar!</button>
-        </section>
+        
         
         <section id="soy-Carla">
             <div class="container">
@@ -33,8 +36,11 @@
                 </div>
                 <div class="texto">
                     <h2>Soy <span class="color-acento">Carla</span></h2>
-                    <p>Estudiante de Ingenieria de Sistemas y Computacion</p>
-                    <a href="https://www.linkedin.com/in/carla-fernanda-gonz%C3%A1lez-mina-060aa1302/">Conoce mi LinkedIn</a>
+                    <p>Estudiante de Ingenieria de Sistemas y Computación</p>
+                    
+                    <p>Apasionada por la tecnología, el desarrollo web, la inteligencia artificial y los proyectos sociales.</p>
+                    <h3> <span class="color-acento">Universidad de los Andes</span></h3>
+                    <a href="https://www.linkedin.com/in/carla-fernanda-gonz%C3%A1lez-mina-060aa1302/" target="_blank"><button>Conoce mi LinkedIn</button></a>
                 </div>
             </div>
         </section>
@@ -44,44 +50,144 @@
                 <h2>Mis Proyectos</h2>
                 <div class="proyectos">
                     <div class="python">
-                        <h3>Gestionador de Tareas</h3>
-                        <p>El siguiente proyecto tiene como fin llevar un tracking del usuario sobre sus tareas las cuales las va guardando y tomando registro por fecha de creación y estado de la asignación (No iniciada/En Progreso/Completada)</p>
-                        <button>Visualizar Proyecto</button>
+                        <h3>Gestión de Tareas</h3>
+                        <img src="proyecto-tareas.jpg" alt="Proyecto de Gestión de Tareas">
+                        <p>Aplicación para gestionar tareas con seguimiento por estado y fecha.</p>
+                        <a href="https://github.com/Carlixgonzam/Proyectos/blob/main/test_organizadordetareas.py" target="_blank"><button>Visualizar Proyecto</button></a>
+                            
+                            
                     </div>
                     <div class="java">
                         <h3>Sistema de Elecciones Presidenciales</h3>
+                        <img src="proyecto-elecciones.jpg" alt="Proyecto de Elecciones Presidenciales">
                         <p>El presente proyecto tiene como fin llevar el registro de unas elecciones presidenciales, el programa tiene el cuenta el conteo de votos, estadisticas por genero, edad, tipo de problación, etc.</p>
-                        <button>Visualizar Proyecto</button>
+                        <a href="https://github.com/Carlixgonzam/Elecciones-Proyecto"><button>Visualizar Proyecto</button></a>
                     </div>
                     <div class="swift">
                         <h3>Aplicación para IOS sobre entrenamientos personales</h3>
-                        <p>En proceso de creacion...</p>
-                        <button>Visualizar Proyecto</button>
+                        <img src="proyecto-entrenador.jpg" alt="Proyecto de Entrenador Personal">
+                        <p>En proceso de creación...</p>
+                        <a href="https://github.com/Carlixgonzam/Juego-Tic-Tac-Toe/blob/main/EntrenadorPersonal.py"><button>Visualizar Proyecto</button></a>
                     </div>
-                </div>
+                    <div class="html-css">
+                        <h3>Página web personal</h3>
+                        <img src="proyecto-web.jpg" alt="Proyecto de Página Web Personal">
+                        <p>Pagina Web personal con el uso de HTML y CSS para su respectiva elaboración.</p>
+                        <a href="https://github.com/Carlixgonzam/Pagina-Web"><button>Visualizar Proyecto</button></a>
+                    </div>
+                    <div class="python">
+                        <h3>Juego de Tic-Tac-Toe</h3>
+                        <img src="proyecto-tic-tac-toe.jpg" alt="Proyecto de Juego Tic-Tac-Toe">
+                        <p>El presente proyecto consta de la elaboración desde cero del famoso juego Tic-Tac-Toe, contiene el tablero de 3x3 y tiene dificultad dificil (Próximas Actualizaciones)</p>
+                        <a href="https://github.com/Carlixgonzam/Juego-Tic-Tac-Toe/blob/main/juego.py"><button>Visualizar Proyecto</button></a>
+                    </div>
+
+                    <div class="python">
+                        <h3>Chatbot de monitoreo de inventario</h3>
+                        <img src="proyecto-chatbot.jpg" alt="Proyecto de Chatbot de Inventario">
+                        <p>En proceso de creación...</p>
+                        <a href="https://github.com/Carlixgonzam/chatbot_inventario"><button>Visualizar Proyecto</button></a>
+                    </div>
+
+                    <div class="python">
+                        <h3>Aplicación de Gestión de Proyectos</h3>
+                        <img src="proyecto-gestion.jpg" alt="Proyecto de Gestión de Proyectos">
+                        <p>En proceso de creación...</p>
+                        <a href="https://github.com/Carlixgonzam/Aplicaci-n-Proyectos"><button>Visualizar Proyecto</button></a>
+                    </div>
+
             </div>
         </section>
         
-        <section id="logros">
+        <section id="skills">
             <div class="container">
-                <h2>Logros</h2>
+                <h2>Skills</h2>
                 <ul>
-                    <li>Miembro Selección Natación</li>
-                    <li>Miembro activo de Robocol</li>
+                    <li><i class="fab fa-python"></i> Python</li>
+                    <li><i class="fab fa-java"></i> Java</li>
+                    <li><i class="fab fa-swift"></i> Swift</li>
+                    <li><i class="fab fa-html5"></i> HTML</li>
+                    <li><i class="fab fa-css3-alt"></i> CSS</li>
+                    <li><i class="fab fa-js-square"></i> JavaScript</li>
+                    <li><i class="fab fa-react"></i> React</li>
+                    <li><i class="fab fa-node-js"></i> Node.js</li>
+                    <li><i class="fab fa-hadoop"></i> Hadoop</li>
+                    <li><i class="fas fa-robot"></i> Robótica</li>
+                    <li><i class="fas fa-brain"></i> Machine Learning</li>
+                    <li><i class="fas fa-infinity"></i> Algoritmos</li>
+                    <li><i class="fas fa-infinity"></i> Matemática Discreta</li>
                     
                 </ul>
             </div>
         </section>
         
-        <section id="final">
-            <h2>Contactame</h2>
-            <button>Ingresar!</button>
+        <section id="investigaciones">
+            <div class="container">
+                <h2>Investigaciones</h2>
+                <div class="investigacion">
+                    <h3>
+                        Measurement of Carbon Dioxide, TVOC, PM2.5, Temperature and Humidity in the classrooms of the Suazapawa Educational Institution, in the year 2023.</h3>
+                    <p>El proyecto de investigación tuvo como objetivo principal evaluar las concentraciones de 
+                        CO2, TVOC, PM2.5, temperatura y humedad en las aulas seleccionadas de la Institución Educativa 
+                        Suazapawa para clasificar la calidad de aire en cada una. </p>
+                    <a href="https://media.licdn.com/dms/document/media/v2/D4D2DAQG9wqiyl76vgQ/profile-treasury-document-pdf-analyzed/profile-treasury-document-pdf-analyzed/0/1721946550650?e=1735776000&v=beta&t=MZ2ekoqzi09sNQ3bJKkhNQguJnKUT4rTAKTcV9tdKys" target="_blank"><button>Link PDF</button></a>
+                </div>
+                <div class="investigacion">
+                    <h3>Transforming Avocado Seedds into Bioethanol: A Sustainable Energy Solution</h3>
+                    <p>La conversión de semillas de aguacate en bioetanol ofrece una solución prometedora para mitigar los residuos agrícolas y la transición hacia fuentes de energía renovables. Aunque existen estacional de la producción de aguacate y la menor densidad energética del y la menor densidad energética del bioetanol en comparación con los combustibles fósiles. se ajusta a los objetivos más amplios del desarrollo sostenible.</p>
+                    <a href="file:///Users/carlagonzalez/Downloads/v2%20(1).pdf" target="_blank"><button>Link PDF</button></a>
+                </div>
+            </div>
         </section>
+        
+        <section id="vlog-personal">
+            <div class="container">
+                <h2>Vlog Personal</h2>
+                <div class="vlog">
+                    <h3>Mis artículos en Medium</h3>
+                    <p>Algunos tips para programación y apreciación al arte.</p>
+                    <a href="https://medium.com/@carlafernanda_83662"><button>Ver Vlog</button></a>
+                </div>
+                
+            </div>
+        </section>
+        <section id="deportes">
+            <div class="container">
+                <h2>Deportes</h2>
+                <ul>
+                    <li>Natación</li>
+                    <li>Ciclismo</li>
+                    <li>Atletismo</li>
+                </ul>
+            </div>
+        </section>
+        <section id="final">
+            <div class="container">
+                <h2>Contáctame</h2>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        
     </main>
+    
     <footer>
         <div class="container">
-            <p>&copy; Curso 2024</p>
+            <p>&copy; Carla Gonzalez 2024</p>
+            
         </div>
     </footer>
 </body>
 </html>
+
