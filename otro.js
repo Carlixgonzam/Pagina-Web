@@ -125,3 +125,107 @@ backToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+// Adding a dark mode toggle
+const darkModeToggle = document.createElement('button');
+darkModeToggle.textContent = '🌙'
+darkModeToggle.style.position = 'fixed';
+darkModeToggle.style.bottom = '10px';
+darkModeToggle.style.right = '10px';
+darkModeToggle.style.padding = '10px';
+darkModeToggle.style.zIndex = 1000;
+document.body.appendChild(darkModeToggle);
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        darkModeToggle.textContent = '☀️';
+    } else {
+        darkModeToggle.textContent = '🌙';
+    }
+});
+
+
+
+// Adding a collapsible section functionality
+document.querySelectorAll('.collapsible').forEach(collapsible => {
+    const content = collapsible.nextElementSibling;
+    content.style.maxHeight = '0';
+    content.style.overflow = 'hidden';
+    content.style.transition = 'max-height 0.5s ease-out';
+
+    collapsible.addEventListener('click', () => {
+        collapsible.classList.toggle('active');
+        if (collapsible.classList.contains('active')) {
+            content.style.maxHeight = content.scrollHeight + 'px';
+        } else {
+            content.style.maxHeight = '0';
+        }
+    });
+});
+
+
+// Adding a hover effect to cards with the class 'card-hover'
+document.querySelectorAll('.card-hover').forEach(card => {
+    card.style.transition = 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out';
+    card.addEventListener('mouseover', () => {
+        card.style.transform = 'translateY(-10px)';
+        card.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)';
+    });
+    card.addEventListener('mouseout', () => {
+        card.style.transform = 'translateY(0)';
+        card.style.boxShadow = 'none';
+    });
+});
+
+// Adding a rotating text effect to elements with the class 'rotate-text'
+document.querySelectorAll('.rotate-text').forEach(element => {
+    const text = element.textContent;
+    element.textContent = '';
+    let index = 0;
+    const rotateText = () => {
+        if (index < text.length) {
+            element.textContent += text.charAt(index);
+            index++;
+            setTimeout(rotateText, 150);
+        } else {
+            setTimeout(() => {
+                element.textContent = '';
+                index = 0;
+                rotateText();
+            }, 2000);
+        }
+    };
+    rotateText();
+});
+
+// Adding a bouncing effect to elements with the class 'bounce'
+document.querySelectorAll('.bounce').forEach(element => {
+    element.style.position = 'relative';
+    element.style.animation = 'bounce 2s infinite';
+});
+
+// Adding keyframes for bounce animation
+const style = document.createElement('style');
+style.innerHTML = `
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}`;
+document.head.appendChild(style);
+
+// Adding a glow effect to elements with the class 'glow'
+document.querySelectorAll('.glow').forEach(element => {
+    element.style.transition = 'box-shadow 0.5s ease-in-out';
+    element.addEventListener('mouseover', () => {
+        element.style.boxShadow = '0 0 20px rgba(255, 255, 255, 0.8)';
+    });
+    element.addEventListener('mouseout', () => {
+        element.style.boxShadow = 'none';
+    });
+});
